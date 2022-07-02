@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int n;       
+	int n;
 	int lastDigit;
 	char str[] = "Last digit of";
 	
