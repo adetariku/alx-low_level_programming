@@ -4,14 +4,17 @@
 /*  More headers goes here */
 
 
-/* Betty style doc for function main goes there */
-
+/**
+ * main -Entry point
+ *
+ * Return: Always 0 (Succes)
+ */
 int main(void)
 {
 	int n;
 	int lastDigit;
 	char str[] = "Last digit of";
-		
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	lastDigit = n % 10;
