@@ -1,25 +1,23 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_array - string copy check..
- * @a: pointer int type
- * @n: is a int variable
- * Return: Always 0.
+ *_strcpy - copies a string from source to destination
+ * @dest: char type string
+ * @src: char type string
+ * Description: Copy the string pointed to by pointer `src` to
+ * the buffer pointed to by `dest`
+ * Return: Pointer to `dest`
  */
-void print_array(int *a, int n)
+
+char *_strcpy(char *dest, char *src)
 {
-int i, inte;
+	int i;
 
-for (i = 0; i < n; i++)
-{
+	for (i = 0; src[i] != '\0'; i++)
+	{
+		dest[i] = src[i];
+	}
+	dest[i] = '\0';
 
-inte = *(a + i);
-
-printf("%d", inte);
-
-if (i != n - 1)
-printf(", ");
-}
-
-printf("\n");
+	return (dest);
 }
