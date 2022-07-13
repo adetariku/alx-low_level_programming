@@ -9,15 +9,25 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int i, j;
+	int dest_count, src_count;
 
-	i = j = 0;
-	while (*(dest + i))
-		i++;
-	while ((*(dest + i) = *(src + j)))
+	dest_count = 0;
+	src_count = 0;
+	/**
+	 * find the last element of the dest string
+	 */
+	while (*(dest + dest_count))
 	{
-		i++;
-		j++;
+		dest_count++;
+	}
+	/**
+	 * append the src contents to dest until terminating char is reached.
+	 * That is until it is false
+	 */
+	while ((*(dest + dest_count) = *(src + src_count)))
+	{
+		dest_count++;
+		src_count++;
 	}
 	return (dest);
 }
