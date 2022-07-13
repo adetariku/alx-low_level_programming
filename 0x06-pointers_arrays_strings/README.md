@@ -1,1 +1,1 @@
-This directory contanins functions about more pointers, Arrays and strigs
+This directory contains functions related to pointers, Arrays and strigs
