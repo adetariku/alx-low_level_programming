@@ -28,7 +28,7 @@ char *_strncpy(char *dest, char *src, int n)
 	 * In anycase the we have to put a terminating char on 
 	 * the remaining buffer locations of the dest buffer.
 	 */
-	while (i <= n)
+	while (i < n)
 	{
 		*(dest + i) = '\0';
 		i++;
