@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include "main.h"
 /**
  * main - check the code
  *
@@ -15,7 +17,7 @@ int main(void)
 	printf("%s\n", s1);
 	printf("%s", s2);
 	printf("%s\n", ptr);
-	pr = _strncat(s1, s2, 1024);
+	ptr = _strncat(s1, s2, 1024);
 	printf("%s", s1);
 	printf("%s", s2);
 	printf("%s", ptr);
