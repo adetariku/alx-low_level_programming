@@ -20,7 +20,6 @@ void print_diagsums(int *a, int size)
 		left_diag_sum += *(a + lpointer);
 		rpointer = (row * size) + (size - row) - 1;
 		right_diag_sum += *(a + rpointer);
-		
 	}
-	printf("%i, %i\n", left_diag_sum , right_diag_sum);
+	printf("%i, %i\n", left_diag_sum, right_diag_sum);
 }
