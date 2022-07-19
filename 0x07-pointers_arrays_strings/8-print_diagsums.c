@@ -11,14 +11,14 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int row, left_diag_sum = 0, right_diag_sum = 0, lpointer, rpointer;
+	int row, left_diag_sum, right_diag_sum, lpointer, rpointer;
 
-
+	left_diag_sum = 0, right_diag_sum = 0;
 	for (row = 0; row < size; row++)
 	{
 		lpointer = (row * size) + row;
 		left_diag_sum += *(a + lpointer);
-		rpointer = (row * size) + (size - row) -1;
+		rpointer = (row * size) + (size - row) - 1;
 		right_diag_sum += *(a + rpointer);
 		
 	}
