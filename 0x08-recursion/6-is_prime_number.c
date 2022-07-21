@@ -14,7 +14,7 @@ int has_a_factor(int n, int c)
 		return (0);
 	if (c > n / 2)
 		return (1);
-	return(has_a_factor(n, c + 1));
+	return (has_a_factor(n, c + 1));
 }
 /**
   * is_prime_number - checks whether a number is a prime or not
