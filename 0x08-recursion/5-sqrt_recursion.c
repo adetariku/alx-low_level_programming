@@ -19,7 +19,7 @@ int square(int n, int i)
 	return (square(n, i + 1));
 }
 /**
- * _square_root - find a natural quare root
+ * _sqrt_recursion - find a natural quare root
  * @n: the input number
  *
  * Return: -1 if n has no natural root, else the natural square root
