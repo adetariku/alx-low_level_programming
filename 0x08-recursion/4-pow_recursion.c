@@ -4,7 +4,7 @@
   * @x :the base
   * @y :the exponent
   *
-  * Return : a number, x raised to y.
+  * Return: a number, x raised to y.
   */
 int _pow_recursion(int x, int y)
 {
