@@ -7,9 +7,10 @@
 int _strlen(char *s)
 {
 	int i = 0;
+
 	while (*s != '\0')
 	{
-		i++ ;
+		i++;
 		s++;
 	}
 	return (i);
@@ -17,17 +18,18 @@ int _strlen(char *s)
 /**
   * check_palindrome - checks if a string is palindrome or not
   * @s: the input string
-  * @I: is a counter index
-  * 
+  * @i: is a counter index
+  * @n: the length of the string
+  *
   * Return : 1 if s is palindrome , 0 otherwise
   */
 int check_palindrome(char *s, int n, int i)
 {
 	if (*(s + i) != *(s + n - 1 - i))
 	{
-		return (0);	
+		return (0);
 	}
-        if (i >= n / 2 )
+	if (i >= n / 2 )
 	{
 		return (1);
 	}
@@ -35,15 +37,14 @@ int check_palindrome(char *s, int n, int i)
 }
 /** 
   * is_palindrome - prints whether a string is palindrome or not
-  * @s : input string 
-  * 
+  * @s : input string
+  *
   * Return: 1 if s is palindrome , 0 otherwise
   */
 int is_palindrome(char *s)
 {
 	int i = 0;
         int n = _strlen(s);
+
 	return (check_palindrome (s, n, i));
 }
-
-
