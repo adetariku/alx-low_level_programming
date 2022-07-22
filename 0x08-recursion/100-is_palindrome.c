@@ -23,7 +23,7 @@ int _strlen(char *s)
   */
 int check_palindrome(char *s, int n, int i)
 {
-	if (*(s + i) != *(s + n - 1 - i)
+	if (*(s + i) != *(s + n - 1 - i))
 	{
 		return (0);	
 	}
@@ -31,7 +31,7 @@ int check_palindrome(char *s, int n, int i)
 	{
 		return (1);
 	}
-	return (check_palindrome(s, n, i + 1);
+	return (check_palindrome(s, n, i + 1));
 }
 /** 
   * is_palindrome - prints whether a string is palindrome or not
@@ -39,11 +39,11 @@ int check_palindrome(char *s, int n, int i)
   * 
   * Return: 1 if s is palindrome , 0 otherwise
   */
-int is_palidrome(char *s)
+int is_palindrome(char *s)
 {
 	int i = 0;
-        int n = _strlen(&s);
-	return (check_palindrome (s, n, i);
+        int n = _strlen(s);
+	return (check_palindrome (s, n, i));
 }
 
 
