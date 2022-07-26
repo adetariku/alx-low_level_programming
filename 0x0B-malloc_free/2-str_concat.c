@@ -31,9 +31,11 @@ char *str_concat(char *s1, char *s2)
 	unsigned int len, i;
 	char *pointer = NULL, *pointer2 = NULL;
 
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	len = str_len(s1) + str_len(s2);
-	if (len == 0)
-		return (NULL);
 	pointer = malloc((len + 1) * sizeof(char));
 	if (!pointer)
 		return (NULL);
