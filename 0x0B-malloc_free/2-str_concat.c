@@ -12,6 +12,8 @@ int str_len(char *str)
 
 	if (!str)
 		return (0);
+	if (str == NULL)
+		return (0);
 	while (str[index] != '\0')
 		index++;
 	return (index);
