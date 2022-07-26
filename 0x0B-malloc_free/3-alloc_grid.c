@@ -23,7 +23,7 @@ int **alloc_grid(int width, int height)
 	while (index < height)
 	{
 		pointer_to_2d[index] = malloc(sizeof(int) * width);
-		if (pointer_to_2d == NULL)
+		if (pointer_to_2d[index] == NULL)
 		{
 			free(pointer_to_2d);
 			return (NULL);
