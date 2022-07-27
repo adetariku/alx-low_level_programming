@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 /**
  * _puts - prints a string followed by a line
  * @str : input string
