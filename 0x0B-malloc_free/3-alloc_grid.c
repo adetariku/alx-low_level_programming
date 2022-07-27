@@ -14,7 +14,7 @@ int **alloc_grid(int width, int height)
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	pointer_to_2d = malloc(sizeof(int*) * height);
+	pointer_to_2d = malloc(sizeof(int *) * height);
 	if (pointer_to_2d == NULL)
 	{
 		free(pointer_to_2d);
@@ -25,15 +25,14 @@ int **alloc_grid(int width, int height)
 		pointer_to_2d[index] = malloc(sizeof(int) * width);
 		if (pointer_to_2d[index] == NULL)
 		{
-			for (k = 0; k <=index; k++)
+			for (k = 0; k <= index; k++)
 				free(pointer_to_2d[k]);
-			free (pointer_to_2d);
+			free(pointer_to_2d);
 			return (NULL);
 		}
 	}
 	for (index = 0; index < height; index++)
 		for (col = 0; col < width; col++)
 			pointer_to_2d[index][col] = 0;
-
 	return (pointer_to_2d);
 }
