@@ -10,26 +10,26 @@
 int **alloc_grid(int width, int height)
 {
 	int **pointer_to_2d;
-	int index = 0, col;
+	int index, col, k;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	pointer_to_2d = malloc(sizeof(int) * height);
+	pointer_to_2d = malloc(sizeof(int*) * height);
 	if (pointer_to_2d == NULL)
 	{
 		free(pointer_to_2d);
 		return (NULL);
 	}
-	index = 0;
-	while (index < height)
+	for (index = 0; index < height; index++)
 	{
 		pointer_to_2d[index] = malloc(sizeof(int) * width);
 		if (pointer_to_2d[index] == NULL)
 		{
-			free(pointer_to_2d);
+			for (k = 0; k <=index; k++)
+				free(pointer_to_2d[k]);
+			free (pointer_to_2d);
 			return (NULL);
 		}
-		index = index + 1;
 	}
 	for (index = 0; index < height; index++)
 		for (col = 0; col < width; col++)
