@@ -1,13 +1,11 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include <unistd.h>
 /**
- * _putchar - prints character to string
+ * _putchar - writes character c to console
  *@c : integer input
  *
- * Return: Always 0 (success)
+ * Return: 1 on success. -1 on error
  */
 int _putchar(char c)
 {
-	_putchar(c);
-	return (0);
+	return (write(1, &c, 1));
 }
