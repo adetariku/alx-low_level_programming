@@ -20,19 +20,24 @@ int **alloc_grid(int width, int height)
 		free(pointer_to_2d);
 		return (NULL);
 	}
-	while (index < height)
+	for (index = 0; index < height; index++)
 	{
 		pointer_to_2d[index] = malloc(sizeof(int) * width);
-		if (pointer_to_2d[index] == NULL)
+		if (pointer_to_2d == NULL)
 		{
 			free(pointer_to_2d);
 			return (NULL);
 		}
+		/**
 		for (col = 0; col < width; col++)
 		{
 			pointer_to_2d[index][col] = 0;
 		}
-		index++;
+		*/
 	}
+	for (index = 0; index < height; index++)
+		for (col = 0; col < width; col++)
+			pointer_to_2d[index][col] = 0;
+
 	return (pointer_to_2d);
 }
