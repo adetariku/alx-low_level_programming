@@ -1,4 +1,5 @@
-#ifndef -DOG_H_
+#include<stdlib.h>
+#ifndef _DOG_H_
 #define _DOG_H_
 /**
  *struct dog -a structure for dog
