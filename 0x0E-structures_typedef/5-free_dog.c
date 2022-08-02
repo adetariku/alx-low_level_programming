@@ -1,10 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include "dog.h"
 /**
  * free_dog - free memory location
- * @dog: structure of dog
+ * @d: structure of dog
  *
  * Return: nothing
  */
+
 void free_dog(dog_t *d)
 {
 	if (d != NULL)
