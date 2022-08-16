@@ -4,7 +4,7 @@
  * insert_nodeint_at_index -see the description
  * @head: pointer to head pointer
  * @ind: index of list
- * @data: data integer
+ * @d: data integer
  *
  * Description: inserts a new node at a given position
  * Return: address of the new node
@@ -16,7 +16,6 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int ind, int d)
 
 	if (head == NULL)
 		return (NULL);
-
 	test = malloc(sizeof(listint_t));
 	if (test == NULL)
 		return (NULL);
