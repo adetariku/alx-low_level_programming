@@ -6,7 +6,7 @@
  * get_ptr_to_loop_node - finds a loop in a linked list
  * @head: a pointer to the first node
  *
- * Return: address of the loop start/return node, NULL if no loop
+ * Return: address of the loop node, NULL if no loop
  */
 listint_t *get_ptr_to_loop_node(listint_t *head)
 {
@@ -27,8 +27,7 @@ listint_t *get_ptr_to_loop_node(listint_t *head)
 }
 
 /**
- * print_listint_safe - prints a linked list, even if it
- * has a loop
+ * print_listint_safe - prints a linked list
  *
  * @head: head of list to print
  *
